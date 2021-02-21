@@ -1,14 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feacure" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6008eb8b-e0d0-44c8-bd3b-e141c9301296" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/layout.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/dbConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/conf/payment_conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_capture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_atm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_barcode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_credit_divide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_credit_onetime.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_credit_period.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_cvs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_googlepay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/aio_check_out_webatm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/create_server_order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/credit_do_act.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/query_credit_csv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/query_credit_period.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/query_credit_single.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/query_trade_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/example/query_transac_csv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/ECpayPayment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/exec_grant_refund.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/helper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/payment_client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/query_client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/verification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/lib/ecpay_payment/version.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ecpay_payment_nodejs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/case_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/ecpay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/education.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/experience.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/language.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/license.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/portofolio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/purchase_record.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/api/student.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/bolg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/commodity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/course-materials.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/dist/style/coursematerials.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/dist/style/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/font/AdobeFnt22.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/font/MyriadRoman.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/font/adobe-std-b_501.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/Paid page/01@2400x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/Paid page/02@2400x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/blog/blog@2400x-20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/blog/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/commodity-1/CM-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/commodity-1/text@2400x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/field-bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/icon/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/icon/btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/icon/down-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/icon/down-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/icon/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/icon/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/icon/shop-cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/index/findaJob01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/index/findaJob01@2400x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/index/product-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/index/product-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/index/product-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/user/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/user/工作.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/user/課程表.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/user/資產 3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/img/資產 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/js/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/paidpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/_coursematerials.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/_resat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/_sec.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/_user.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/style/coursematerials.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/style/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Project/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/teacher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,6 +165,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modules" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -28,6 +173,18 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/bin" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/routes/api" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -37,11 +194,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613810630484</updated>
-      <workItem from="1613810632904" duration="148000" />
+      <workItem from="1613810632904" duration="9356000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
