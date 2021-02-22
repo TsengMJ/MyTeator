@@ -4,7 +4,6 @@
       <HomePageSearchPanel />
     </div>
 
-
     <HomePageFiledPanel class="full-width"/>
 
     <HomePageTeacherPanel />
@@ -64,6 +63,33 @@ export default {
     background-image: url("../assets/background.webp");
     background-position: center center;
     background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 40vh;
+      background: linear-gradient(
+              0deg,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(30, 108, 174, 1) 75%
+      );
+      //z-index: 10;
+    }
+    //&::after {
+    //  content: "";
+    //  position: absolute;
+    //  bottom: 0;
+    //  width: 100%;
+    //  height: 20vh;
+    //  background: linear-gradient(
+    //          0deg,
+    //          rgba(30, 108, 174, 1) 0%,
+    //          rgba(255, 255, 255, 0) 100%
+    //  );
+    //  //z-index: 10;
+    //}
 
   }
 

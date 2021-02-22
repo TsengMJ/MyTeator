@@ -39,26 +39,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6008eb8b-e0d0-44c8-bd3b-e141c9301296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icon/arrow-down.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icon/btn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icon/down-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icon/down-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icon/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icon/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/icon/shop-cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/HomePageFiledPanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/HomePageSearchPanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/HomePageTeacherPanel.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/TheHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/_coursematerials.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/_media.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/_resat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/_sec.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/_user.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/scss/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/style/coursematerials.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/views/Shop.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/views/Project/style/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/HomePageSearchPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/HomePageSearchPanel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/plugins/vuetify.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/plugins/vuetify.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views/Project/bolg.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/bolg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views/Project/commodity.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/commodity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views/Project/course-materials.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/course-materials.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views/Project/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/index-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/views/Project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/views/Project/scss/_sec.scss" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/scss/_sec.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views/Project/paidpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/paidpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views/Project/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/views/Project/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +92,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,11 +107,11 @@
       <recent name="$PROJECT_DIR$/bin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/src/components" />
       <recent name="$PROJECT_DIR$/client/src/assets" />
+      <recent name="$PROJECT_DIR$/client/src/views" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
       <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/bin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -114,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613810630484</updated>
-      <workItem from="1613810632904" duration="32638000" />
+      <workItem from="1613810632904" duration="44890000" />
     </task>
     <servers />
   </component>
@@ -137,9 +145,25 @@
       <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state x="383" y="134" key="RollbackChangesDialog/0.25.1440.805/-312.-1055.1920.1055@0.25.1440.805" timestamp="1613917189721" />
+    <state x="290" y="192" width="670" height="675" key="run.anything.popup" timestamp="1613975065870">
+      <screen x="0" y="25" width="1440" height="805" />
+    </state>
+    <state x="290" y="192" width="670" height="675" key="run.anything.popup/0.25.1440.805/-254.-1055.1920.1055@0.25.1440.805" timestamp="1613975065870" />
     <state x="290" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1613925759345">
       <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state x="290" y="154" width="670" height="676" key="search.everywhere.popup/0.25.1440.805/-312.-1055.1920.1055@0.25.1440.805" timestamp="1613925759345" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/views/Shop.vue</url>
+          <line>72</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

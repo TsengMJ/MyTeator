@@ -58,7 +58,6 @@ name: "HomePageSearchPanel"
   height: 100%;
   align-items: center;
   justify-content: center;
-  //background-color: #42b983;
   color: #163d68;
   text-align: left;
 
@@ -66,8 +65,6 @@ name: "HomePageSearchPanel"
     position: relative;
     bottom: 10%;
     width: 70%;
-
-    //background-color: #00B7FF;
 
     .search_area {
       display: flex;

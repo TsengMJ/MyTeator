@@ -1,0 +1,144 @@
+#sec-cm {
+  .container {
+    display: flex;
+    .input-search {
+      margin-left: auto;
+      width: 220px;
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 80%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #000;
+      }
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  .puteacher-row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    .img {
+      width: 150px;
+      margin: 0 10px;
+      img {
+        width: 100%;
+      }
+    }
+    .Text {
+      width: 100%;
+      display: flex;
+      .left {
+        width: 70%;
+        padding: 0 20px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        h4 {
+          color: #16355e;
+        }
+        h5 {
+          color: #666;
+          margin: 8px 0;
+        }
+        p {
+          color: #16355e;
+        }
+        .left-span {
+          display: block;
+          color: #000;
+          margin: 8px 0;
+          cursor: pointer;
+        }
+        .put-btn {
+          display: flex;
+          .put-btn-left,
+          .put-btn-right {
+            display: block;
+            padding: 10px 20px;
+          }
+          .put-btn-left {
+            margin-left: auto;
+            background-color: #3586c8;
+            color: #fff;
+          }
+          .put-btn-right {
+            margin-left: 10px;
+            border: 2px solid #16355e;
+            color: #16355e;
+          }
+        }
+      }
+      .right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 18px;
+        letter-spacing: 2px;
+        .box {
+          display: flex;
+          justify-content: space-around;
+          .text {
+            margin-top: 30px;
+          }
+        }
+        .puteacher-img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .paid {
+    margin-top: 40px;
+    .title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 60px;
+      span {
+        color: #f39800;
+      }
+    }
+    .paid-conter {
+      display: flex;
+      justify-content: space-around;
+      .row {
+        text-align: center;
+        h3 {
+          font-size: 22px;
+          color: #ccc;
+          margin: 20px 0;
+        }
+        h2 {
+          font-size: 28px;
+        }
+        .hide {
+          visibility: hidden;
+        }
+      }
+      .row-s {
+        text-align: start;
+      }
+    }
+  }
+}
+
+/* commodity 第一頁 */
+.commodity-img-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px 0;
+  .img-boz {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 0 40px;
+    img {
+      width: 100%;
+    }
+  }
+}
