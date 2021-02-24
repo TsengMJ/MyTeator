@@ -11,8 +11,7 @@
         <template v-for="(case_info, index) in case_infos">
           <v-list-item :key="index" style="text-align: left">
             <v-col>
-              <v-list-item-title v-text="case_info.title"></v-list-item-title>
-
+              <v-list-item-title v-text="case_info.title" class="mb-4"></v-list-item-title>
               <div style="display: flex; flex-direction: row">
                 <v-list-item-title>預算 ${{case_info.budget}}</v-list-item-title>
                 <v-list-item-title>應徵數 ${{case_info.application_number}}</v-list-item-title>

@@ -112,7 +112,6 @@ export default {
   data() {
     return {
       select_time: '',
-
       categories: [
         {
           name: '伴讀/保母',

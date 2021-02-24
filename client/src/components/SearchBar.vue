@@ -5,7 +5,7 @@
         placeholder="收尋"
     >
       <template slot="append-outer">
-        <v-icon large >mdi-magnify</v-icon>
+        <v-icon>mdi-magnify</v-icon>
       </template>
     </v-text-field>
   </div>
@@ -20,6 +20,6 @@ export default {
 
 <style lang="scss" scoped>
 .search-field {
-  width: 300px;
+  width: 200px;
 }
 </style>

@@ -1,32 +1,17 @@
 <template>
-  <div>
-    <div id="main-user">
-      <div class="blog-bg"></div>
-      <div class="page-title">
-        <h1 class="ber-text">找工作</h1>
-      </div>
-    </div>
+  <v-card flat class="blog-page-content_container">
+    <v-card-title v-text="blog.title"></v-card-title>
+    <v-card-subtitle v-text="blog.subtitle"></v-card-subtitle>
+    <v-card-text
+        v-text="blog.content"
+    ></v-card-text>
+  </v-card>
 
-    <v-card>
-      <v-container class="blog_body_panel">
-          <BlogPageContent />
-          <BlogPageOtherResource />
-
-      </v-container>
-    </v-card>
-  </div>
 </template>
 
 <script>
-import BlogPageContent from "@/components/BlogPageContent";
-import BlogPageOtherResource from "@/components/BlogPageOtherResource";
-
 export default {
-  name: "Blog",
-  components: {
-    BlogPageContent,
-    BlogPageOtherResource
-  },
+  name: "BlogPageContent",
   data() {
     return {
       blog: {
@@ -53,8 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.blog_body_panel {
-  display: flex;
-  flex-direction: row;
+.blog-page-content_container {
+  text-align: left;
 }
 </style>
