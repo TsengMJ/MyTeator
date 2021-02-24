@@ -2,16 +2,15 @@
 
   <div class="shop_container">
     <div id="main-user">
-      <section class="sec-header cm-bg">
-      </section>
-      <div class="shop_title">
+      <div class="cm-bg"></div>
+      <div class="page-title">
         <h1 class="ber-text">Course materials</h1>
       </div>
     </div>
 
     <div class="shop_panel mt-12">
       <v-card flat class="shop_card">
-        <div class="shop_card-title">
+        <div class="shop_card-title mb-8">
           <div class="list-item list-item-user">
             <h1 class="text">首頁
               <v-icon>mdi-chevron-right</v-icon>
@@ -19,17 +18,8 @@
             </h1>
           </div>
 
-          <div>
-            <v-text-field
-                placeholder="英語教材"
-                class="shop_input-field"
-            >
-              <template slot="append-outer">
-                <v-icon large >mdi-magnify</v-icon>
-              </template>
+          <SearchBar />
 
-            </v-text-field>
-          </div>
         </div>
 
         <div class="shop_card-content">
@@ -70,31 +60,24 @@
                 </div>
               </div>
 
-<!--              <div class="menu-bottom">-->
-<!--                <div class="container-12">-->
-<!--                  <div class="menu-bottom-cn">-->
-<!--                    <a href="#"><i class="fas fa-angle-left"></i></a>-->
-<!--                    <a href="#">1</a>-->
-<!--                    <a href="#">2</a>-->
-<!--                    <a href="#">3</a>-->
-<!--                    <a href="#"><i class="fas fa-angle-right"></i></a>-->
-<!--                  </div>-->
-
-<!--                </div>-->
-<!--              </div>-->
             </div>
 
           </div>
         </div>
       </v-card>
     </div>
-    
+
   </div>
 </template>
 
 <script>
+import SearchBar from "@/components/SearchBar";
+
 export default {
   name: "Shop",
+  components: {
+    SearchBar
+  },
   data () {
     return {
       types: [
@@ -191,15 +174,6 @@ export default {
 <style lang="scss" scoped>
 .shop_container {
   width: 100%;
-
-  .shop_title {
-    font-size: 36px;
-    text-align: left;
-    padding-left: 10%;
-    padding-right: 10%;
-    color: white;
-    background-color: #16355e;
-  }
 
   .shop_panel {
     display: flex;

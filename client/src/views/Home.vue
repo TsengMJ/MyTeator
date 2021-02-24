@@ -36,7 +36,6 @@ export default {
     HomePageJobPanel,
     HomePageBlogPanel
   }
-
 }
 </script>
 

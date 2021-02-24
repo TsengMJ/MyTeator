@@ -71,6 +71,7 @@ export default {
           name: 'Angel',
           image: require('../assets/img/phone.png'),
           title: 'ANGEL娜娜 兒少｜成人美語    英聽口說文法難不倒！',
+          subtitle: '10年教學經驗｜多益820',
           rate: 5,
           description: '一月課程招生中♀正式課程 新師優惠7折 限前10名♀幫助你解決英文學習的疑難雜症國北課程碩士生｜商學院英語專業 專長為發音入門、生活英文、文法扎根、自主閱讀！ 世界運動賽事英文即時口譯員 ESL全英語教學 讓娜娜成為你最好',
         },
