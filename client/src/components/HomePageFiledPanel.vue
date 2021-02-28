@@ -34,7 +34,7 @@
             </div>
           </div>
           <div class="field-btn">
-            <a href="#">查看更多</a>
+            <router-link to="/find_teacher">查看更多</router-link>
           </div>
         </div>
       </div>

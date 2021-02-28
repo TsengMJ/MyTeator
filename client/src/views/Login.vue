@@ -5,7 +5,9 @@
       <v-card-actions>
         <v-col>
           <v-text-field
+              v-model="account_email"
               placeholder="註冊信箱"
+              :rules="[input_rules.required, input_rules.email]"
               prepend-inner-icon="mdi-account-circle"
               solo
               flat
@@ -13,7 +15,10 @@
               outlined
           ></v-text-field>
           <v-text-field
+              type="password"
+              v-model="password"
               placeholder="帳號密碼"
+              :rules="[input_rules.required]"
               prepend-inner-icon="mdi-key"
               solo
               flat
@@ -24,6 +29,7 @@
           <v-btn
               width="100%"
               color="#f39800"
+              @click="login"
           >
             登入
           </v-btn>
@@ -41,7 +47,20 @@
 
 <script>
 export default {
-  name: "Login"
+  name: "Login",
+  methods: {
+    login() {
+      console.log("Account:", this.account_email)
+      console.log("Password:", this.password)
+      this.$store.dispatch('login')
+    },
+  },
+  data() {
+    return {
+      account_email: null,
+      password: null,
+    }
+  }
 }
 </script>
 

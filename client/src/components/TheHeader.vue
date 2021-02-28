@@ -8,12 +8,15 @@
       </div>
 
       <div class="header_link_area">
-        <router-link to="/shop">熱門商品</router-link>
-        <router-link to="/find_job">找工作</router-link>
-        <router-link to="/find_teacher">找教師</router-link>
-        <router-link to="/blog">部落格</router-link>
-        <router-link to="/resource">資源下載</router-link>
-        <router-link to="/login">註冊/登入</router-link>
+        <div
+            v-for="(navigation, index) in navigations"
+            :key="index"
+        >
+          <router-link
+            :to="navigation.url"
+            v-text="navigation.title"
+          ></router-link>
+        </div>
         <img src="../assets/icon/shop-cart.svg" alt="shopping-list" class="shop-cart">
       </div>
 
@@ -23,7 +26,33 @@
 
 <script>
 export default {
-name: "TheHeader"
+  name: "TheHeader",
+  data() {
+    return {
+      navigations: [
+        {
+          title: '熱門商品',
+          url: '/shop'
+        },
+        {
+          title: '找工作',
+          url: '/find_job'
+        },
+        {
+          title: '找教師',
+          url: '/find_teacher'
+        },
+        {
+          title: '部落格',
+          url: '/blog'
+        },
+        {
+          title: '註冊/登入',
+          url: '/login'
+        },
+      ]
+    }
+  }
 }
 </script>
 

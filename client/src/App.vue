@@ -14,6 +14,7 @@ import TheFooter from "@/components/TheFooter";
 
 export default {
   name: "App",
+
   components: {
     TheHeader,
     TheFooter

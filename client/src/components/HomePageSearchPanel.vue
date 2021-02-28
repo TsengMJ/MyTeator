@@ -1,47 +1,47 @@
 <template>
-  <div class="search-area_container">
-    <div class="search-area_panel">
-      <div>
-        <h1>從 MYTeachtor認識世界各地的人與文化</h1>
-        <h2>已累計125874名家教...</h2>
-      </div>
+  <v-card class="search-area_container" color="transparent">
+    <div class="search-area_panel" >
+      <v-card-title class="title pb-0">
+        從 MYTeachtor認識世界各地的人與文化 <br>
+        已累計125874名家教...
+      </v-card-title>
 
-      <div class="search_area">
+      <v-row align="baseline" class="ma-0 pa-0" >
         <v-text-field
-            single-line
-            rounded
-            height="40"
             placeholder="輸入英文會話、日文會話"
             background-color="white"
-            class="search_input ma-0"
+            class="search_input"
+            solo
+            dense
+            rounded
+            height="40"
         >
           <template slot="append">
             <img src="../assets/icon/search.svg" alt="search-icon" class="search_icon">
           </template>
-
         </v-text-field>
 
 
-        <v-btn
-          rounded
-          solo
-          height="40"
-          color="white"
-          class="search-btn"
-        >
-          <img src="../assets/icon/btn.svg" class="filter_icon">
-        </v-btn>
+        <div>
+          <v-btn
+              rounded
+              solo
+              height="40"
+              color="white"
+              class="search-btn mb-1 ml-2"
+          >
+            <img src="../assets/icon/btn.svg" class="filter_icon">
+          </v-btn>
+        </div>
 
+      </v-row>
+
+      <div class="shop-btn mt-10">
+        <router-link to="/shop">購物去！</router-link>
       </div>
-
-
     </div>
+  </v-card>
 
-    <div class="shop-btn">
-      <a href="/">購物去！</a>
-    </div>
-
-  </div>
 </template>
 
 <script>
@@ -62,46 +62,33 @@ name: "HomePageSearchPanel"
   text-align: left;
 
   .search-area_panel {
-    position: relative;
-    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 70%;
 
-    .search_area {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
 
-      .search_input {
-        width: 800px;
-
-        .search_icon {
-          height: 28px;
-          position: relative;
-          left: 5px;
-        }
-      }
-    }
-
-    .search-btn {
-      margin-left: 10px;
-
-      .filter_icon {
-        height: 28px;
-      }
-    }
-  }
-
-  .shop-btn {
-    text-align: center;
-
-    a {
-      font-size: 26px;
+    .title {
       font-weight: bold;
-      letter-spacing: 2px;
-      padding: 12px 35px;
-      border-radius: 50px;
-      color: #fff;
-      background-color: #f39800;
+      color: #2c3e50;
+    }
+
+    .search-input {
+      width: 800px;
+    }
+
+    .shop-btn {
+      text-align: center;
+
+      a {
+        font-size: 26px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 12px 35px;
+        border-radius: 50px;
+        color: #fff;
+        background-color: #f39800;
+      }
     }
   }
 }

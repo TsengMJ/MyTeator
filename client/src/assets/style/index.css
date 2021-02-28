@@ -2157,3 +2157,8 @@ footer h1 {
 .page_title_search-bar {
   width: 300px;
 }
+
+.max-width-12 {
+  width: 100%;
+  max-width: 1200px;
+}

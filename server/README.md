@@ -3,25 +3,64 @@
 # Database tables
 ### Create Tables
 
-Teacher table:
+Customer table:
 ```
-CREATE TABLE teacher (
+CREATE TABLE customer (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL,
-    phone1 VARCHAR(20),
-    phone2 VARCHAR(20),
-    address VARCHAR(256),
-    email1  VARCHAR(255),
-    email2  VARCHAR(255),
-    introduction VARCHAR(1024),
-    signup_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    domain VARCHAR(2048),
-    isvalid BOOLEAN DEFAULT 0,
+    account_email VARCHAR(255) NOT NULL,    
+    password VARCHAR(32) NOT NULL, 
+    status CHAR(3) NOT NULL,
     PRIMARY KEY(id)
 );
 ```
 
+Customer Info table:
+```
+CREATE TABLE customer_info (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    cell_phone VARCHAR(64),
+    local_phone VARCHAR(64),
+    main_email VARCHAR(64),
+    alternate_emai VARCHAR(64),
+    introduction VARCHAR(1024),
+    fk_customer_id int UNSIGNED,
+    PRIMARY KEY(id),
+    FOREIGN KEY(fk_customer_id) REFERENCES customer(id)
+);
+```
+
+Experience table:
+```
+CREATE TABLE experience (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    company VARCHAR(1024),
+    job_title VARCHAR(1024),
+    job_category VARCHAR(1024),
+    employment_date DATETIME,	
+    resignation_date DATETIME,	
+    description VARCHAR(1024),
+    fk_customer_id int UNSIGNED,
+    PRIMARY KEY(id),
+    FOREIGN KEY(fk_customer_id) REFERENCES customer(id)
+);
+```
+
+Service Info table: (Not yet)
+```
+CREATE TABLE service_info (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    max_price FLOAT,
+    min_price FLOAT,
+    area CHAR()
+    method CHAR(3),
+    
+    fk_customer_id int UNSIGNED,
+    PRIMARY KEY(id),
+    FOREIGN KEY(fk_customer_id) REFERENCES customer(id)
+)
+```
+
+------------------------
 License table:
 ```
 CREATE TABLE license (
@@ -77,36 +116,6 @@ CREATE TABLE portfolio (
 );
 ```
 
-Experience table:
-```
-CREATE TABLE experience (
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    company VARCHAR(255) NOT NULL,
-    job_title VARCHAR(128),
-    employment_date DATETIME,	
-    resignation_date DATETIME,	
-    description VARCHAR(1024),
-    fk_teacher_id int UNSIGNED,
-    PRIMARY KEY(id),
-    FOREIGN KEY(fk_teacher_id) REFERENCES teacher(id)
-);
-```
-
-Student table:
-```
-CREATE TABLE student (
-    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    first_name VARCHAR(50) NOT NULL,
-    last_name VARCHAR(50) NOT NULL,
-    phone1 VARCHAR(20),
-    phone2 VARCHAR(20),
-    address VARCHAR(256),
-    email1  VARCHAR(255),
-    email2  VARCHAR(255),
-    signup_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    PRIMARY KEY(id)
-);
-```
 
 Article table:
 ```

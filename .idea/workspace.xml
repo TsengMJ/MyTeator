@@ -39,17 +39,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6008eb8b-e0d0-44c8-bd3b-e141c9301296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/views/EditProfile.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/views/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/EditProfileTableBasicInformation.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/assets/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CaseFilter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CaseFilter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FindJobListView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FindJobListView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SearchBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/SearchBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/views/Blog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Blog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/HomePageFiledPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/HomePageFiledPanel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/HomePageSearchPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/HomePageSearchPanel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/EditProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/EditProfile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/views/Project/bolg.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/views/Project/bolg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/views/Shop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/views/Shop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +64,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="package.json" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -88,15 +93,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/components" />
       <recent name="$PROJECT_DIR$/client/src/assets" />
       <recent name="$PROJECT_DIR$/client/src/views" />
       <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
+      <recent name="$PROJECT_DIR$/bin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -107,7 +113,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613810630484</updated>
-      <workItem from="1613810632904" duration="77878000" />
+      <workItem from="1613810632904" duration="90601000" />
+      <workItem from="1614271069469" duration="9524000" />
+      <workItem from="1614349935432" duration="6200000" />
     </task>
     <servers />
   </component>
@@ -124,6 +132,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="383" y="134" key="RollbackChangesDialog" timestamp="1613917189721">
@@ -138,10 +147,10 @@
       <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state x="290" y="192" width="670" height="675" key="run.anything.popup/0.25.1440.805/-254.-1055.1920.1055@0.25.1440.805" timestamp="1613975065870" />
-    <state x="290" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1613994254760">
+    <state x="290" y="154" width="670" height="676" key="search.everywhere.popup" timestamp="1614496900682">
       <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state x="290" y="154" width="670" height="676" key="search.everywhere.popup/0.25.1440.805/-254.-1055.1920.1055@0.25.1440.805" timestamp="1613994254760" />
-    <state x="290" y="154" width="670" height="676" key="search.everywhere.popup/0.25.1440.805/-312.-1055.1920.1055@0.25.1440.805" timestamp="1613925759345" />
+    <state x="290" y="154" width="670" height="676" key="search.everywhere.popup/0.25.1440.805/-312.-1055.1920.1055@0.25.1440.805" timestamp="1614496900682" />
   </component>
 </project>
