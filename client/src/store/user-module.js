@@ -1,4 +1,4 @@
-
+import { apiUserRegister, apiUserLogin } from '@/apis'
 const userModule = {
   state: {
     id: '',
@@ -10,21 +10,23 @@ const userModule = {
   mutations: {
     ASSIGN_USER ( state, user) {
       console.log("in User Module")
-      console.log(user.id)
+      console.log(user)
 
       state.id = user.id;
       state.first_name = user.first_name;
       state.last_name = user.last_name;
       state.email = user.email;
-      state.status = user.status;
     }
   },
   actions: {
-    login({ commit }) {
-      //{account_email, password}
+    async login({ commit }, data) {
       // call login api, check if avaliable
       // let user = login(account, password)
       // if (valid)
+      apiUserLogin(data)
+        .then((res) => {
+
+        })
 
       let user = {
         id: 123,
@@ -39,9 +41,13 @@ const userModule = {
       commit('ASSIGN_USER', user)
     },
 
-    // register() {
-    //
-    // },
+    async register({ commit } , data) {
+      apiUserRegister(data)
+        .then((res) => {
+          if(res.data == "Success") { commit('ASSIGN_USER', data); return true;}
+          else { return false }
+        })
+    },
 
   }
 }

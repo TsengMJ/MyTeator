@@ -5,8 +5,9 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('server:server');
+var debug = require('debug')('server-new:server');
 var http = require('http');
+// import { connectDB }  from './models'
 
 /**
  * Get port from environment and store in Express.
@@ -24,8 +25,11 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-
-server.listen(port);
+connectDB().then(async () => {
+  server.listen(port, () => {
+    console.log("Connect to DB")
+  });
+})
 server.on('error', onError);
 server.on('listening', onListening);
 

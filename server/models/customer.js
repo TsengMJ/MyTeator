@@ -24,12 +24,8 @@ const customerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  status: {
-    type: String,
-    required: true,
-  },
 })
 
-const Customer = mongoose.model('Customer', customerSchema);
+const Customer = mongoose.model('customer', customerSchema);
 
-export default Customer;
+module.exports = Customer;

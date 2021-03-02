@@ -50,15 +50,28 @@ export default {
   name: "Login",
   methods: {
     login() {
-      console.log("Account:", this.account_email)
-      console.log("Password:", this.password)
-      this.$store.dispatch('login')
+      if (this.input_rules.email(this.account_email) != true
+          || this.input_rules.password_length(this.password) != true
+      ){
+        // Show alert
+      } else {
+        console.log("Account:", this.account_email)
+        console.log("Password:", this.password)
+        let account_email = this.account_email
+        let password = this.password
+        this.$store.dispatch('login', {account_email:account_email, password: password})
+        this.clearPassword()
+      }
     },
+
+    clearPassword() {
+      this.password =''
+    }
   },
   data() {
     return {
-      account_email: null,
-      password: null,
+      account_email: '',
+      password: '',
     }
   }
 }
