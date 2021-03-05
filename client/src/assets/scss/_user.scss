@@ -1,0 +1,316 @@
+@mixin input-Bg-border-no {
+  background-color: #ccc;
+  border: none;
+}
+
+#main-user {
+  /* sec-header */
+  .sec-header {
+    width: 100%;
+    height: 100vh;
+    background: url('./assets/img/user/工作.jpg');
+    background-size: cover;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40vh;
+      background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(30, 108, 174, 1) 75%
+      );
+      z-index: 10;
+    }
+  }
+  .cm-bg {
+    height: 70vh;
+    background: url('./assets/img/commodity-1/CM-bg.jpg') no-repeat;
+    background-size: cover;
+  }
+}
+
+#user-content {
+  .list-item {
+    margin-bottom: 20px;
+  }
+  .container {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+}
+
+/* all */
+/* 左邊側欄 */
+.content-modal {
+  display: flex;
+  .set-sort {
+    width: 350px;
+    height: 100%;
+    margin-right: 20px;
+    .set-sort-item {
+      .title {
+        font-size: 28px;
+        letter-spacing: 4px;
+      }
+      .title-w100 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #000;
+        margin-top: 20px;
+        img {
+          width: 25px;
+        }
+      }
+    }
+    .item-one {
+      .item {
+        margin-top: 17px;
+        margin-left: 10px;
+        font-size: 22px;
+        letter-spacing: 3px;
+        .fa-caret-right,
+        .fa-caret-down {
+          color: #16355e;
+        }
+        span {
+          color: #16355e;
+        }
+        .input-down {
+          .item-down {
+            margin: 10px 0;
+            li {
+              margin-left: 50px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .item-two {
+      .options {
+        width: 100%;
+        margin: 20px 0;
+        label {
+          display: block;
+          font-size: 22px;
+          letter-spacing: 4px;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+        select {
+          position: relative;
+          width: 100%;
+          padding: 10px 20px;
+          appearance: none;
+          font-size: 20px;
+          letter-spacing: 2px;
+          background-color: #ccc;
+          color: #666666;
+          border: none;
+          cursor: pointer;
+          background-image: url('./assets/img/icon/down-arrow.svg');
+          background-repeat: no-repeat;
+          background-size: 22px;
+          background-position: 215px 10px;
+        }
+        .box {
+          display: flex;
+          align-items: center;
+          input {
+            @include input-Bg-border-no;
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 20px;
+          }
+          span {
+            margin: 0 10px;
+          }
+        }
+        .box-radio {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          margin: 10px 0;
+          cursor: pointer;
+          input {
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+          label {
+            margin-bottom: 0px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .set-form {
+    .Self-box {
+      display: flex;
+      margin-bottom: 10px;
+      .avatar {
+        img {
+          width: 250px;
+          height: 100%;
+        }
+      }
+    }
+    .Self-content {
+      width: 100%;
+      margin-left: 10px;
+      .input-box {
+        display: flex;
+        input {
+          width: 100%;
+          height: 25px;
+          padding: 10px 20px;
+          margin: 5px 0;
+          @include input-Bg-border-no;
+        }
+        .mg-te {
+          margin: 5px 10px 5px 0;
+        }
+      }
+    }
+  }
+  .input-enter {
+    margin-bottom: 10px;
+    textarea {
+      width: 100%;
+      height: 300px;
+      font-size: 22px;
+      letter-spacing: 2px;
+      @include input-Bg-border-no;
+    }
+  }
+  .text-box {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: calc(100% / 5);
+      height: 150px;
+      margin-right: 10px;
+      background-color: #ccc;
+      display: grid;
+      place-items: center;
+      color: rgb(134, 134, 134);
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+    .mg-te {
+      margin-right: 0px;
+    }
+  }
+  .course {
+    width: 100%;
+    margin-bottom: 80px;
+    img {
+      width: 100%;
+    }
+  }
+  .set-img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .img-box {
+      width: 200px;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.content-modal-soures {
+  .set-sort {
+    width: 700px;
+  }
+}
+
+/* 換頁列 */
+.menu-bottom {
+  margin: 50px 0;
+  .menu-bottom-cn {
+    text-align: center;
+    a {
+      font-size: 22px;
+      color: #000;
+      margin: 0 10px;
+    }
+  }
+}
+
+.puteacher-content-cm {
+  display: flex;
+  letter-spacing: 1px;
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+  .left {
+    flex: 2;
+    padding-right: 60px;
+    h4 {
+      font-size: 22px;
+      color: #1e6cae;
+      margin-bottom: 15px;
+    }
+    h5 {
+      font-size: 18px;
+      color: #9fa0a0;
+      line-height: 25px;
+      margin-bottom: 15px;
+      .fa-star {
+        color: #f39800;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: #1e6cae;
+      margin-bottom: 15px;
+    }
+    .put-btn {
+      text-align: right;
+      margin-top: 40px;
+      span {
+        padding: 10px 35px;
+      }
+      .left {
+        border: 3px solid#1e6cae;
+        background-color: #1e6cae;
+        color: #fff;
+      }
+      .right {
+        border: 3px solid #16355e;
+        color: #16355e;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    .text {
+      display: flex;
+      margin-bottom: 40px;
+      .text-box {
+        flex: 1;
+        font-size: 30px;
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+    .video {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

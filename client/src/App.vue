@@ -1,12 +1,32 @@
 <template>
-  <div id="app">
-    <v-app>
-      <router-view/>
-    </v-app>
-  </div>
+
+  <v-app id="app">
+    <TheHeader />
+    <router-view/>
+    <TheFooter />
+  </v-app>
+
 </template>
 
-<style>
+<script>
+import TheHeader from "@/components/TheHeader";
+import TheFooter from "@/components/TheFooter";
+
+export default {
+  name: "App",
+  components: {
+    TheHeader,
+    TheFooter
+  },
+  data() {
+    // this.$store.dispatch("fetchAllProductsID")
+    return {}
+  }
+
+}
+</script>
+
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +47,8 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
+@import "assets/style";
+@import "assets/scss";
+
 </style>
