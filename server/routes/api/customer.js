@@ -2,6 +2,7 @@ let express = require('express');
 let router = express.Router();
 let models = require('../../models')
 
+// Create a new customer
 router.post('/', async (req, res) => {
   const customer = new models.Customer({
     first_name: req.body.first_name,
@@ -24,6 +25,7 @@ router.get('/', async (req, res) => {
 
 })
 
+// Login validation
 router.post('/login', (req, res) => {
   models.Customer
     .find({ account_email: req.body.account_email, password: req.body.password })

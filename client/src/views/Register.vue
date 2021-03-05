@@ -63,6 +63,7 @@
               v-text="alert.text"
               dense
               class="alert mt-2"
+              :style="isAlertVisible? visible: invisible"
           ></v-alert>
 
           <v-row class="mt-10 justify-center">
@@ -72,6 +73,7 @@
         </v-col>
       </v-card-actions>
     </v-card>
+
   </v-container>
 </template>
 
@@ -79,7 +81,7 @@
 export default {
   name: "Register",
   methods: {
-    register() {
+    async register() {
       let first_name = this.first_name
       let last_name = this.last_name
       let account_email = this.account_email
@@ -93,13 +95,21 @@ export default {
           || this.input_rules.password_length(password) != true
       ) {
         console.log("Failed")
-        // Show alert
+        this.showWrongFormatAlert()
       } else {
-        // Redirect to another page
         this.$store.dispatch('register', {first_name, last_name, account_email, password})
-        this.clearPassword()
-      }
+          .then((success) => {
+            console.log("In Register: ", success)
+            if (success) {
+              console.log("Success")
+              this.$router.push({ path: '/login'})
+            } else {
+              this.showDuplicatedAccountEmail()
+            }
 
+            this.clearPassword()
+          })
+      }
     },
 
     clearPassword() {
@@ -112,10 +122,6 @@ export default {
       last_name: '',
       account_email: '',
       password: '',
-      alert: {
-        type: 'error',
-        text: '輸入錯誤'
-      }
     }
   }
 }
@@ -130,10 +136,6 @@ export default {
   .origin_text {
     color: #f39800;
     margin: 20px;
-  }
-
-  .alert {
-    visibility: hidden;
   }
 }
 

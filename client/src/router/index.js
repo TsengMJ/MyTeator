@@ -49,6 +49,21 @@ const routes = [
     path: '/profile/edit',
     name: 'EditProfile',
     component: () => import('../views/EditProfile')
+  },
+  {
+    path: '/product/:id',
+    name: 'Product',
+    component: () => import('../views/Product')
+  },
+  {
+    path: '/paid',
+    name: 'Paid',
+    component: () => import('../views/Paid')
+  },
+  {
+    path: 'case_form',
+    name: 'CaseForm',
+    component: () => import('../views/CaseForm')
   }
 ]
 

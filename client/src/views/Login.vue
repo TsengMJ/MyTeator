@@ -18,7 +18,7 @@
               type="password"
               v-model="password"
               placeholder="帳號密碼"
-              :rules="[input_rules.required]"
+              :rules="[input_rules.required, input_rules.password_length]"
               prepend-inner-icon="mdi-key"
               solo
               flat
@@ -33,10 +33,17 @@
           >
             登入
           </v-btn>
-          <div class="mt-4 mb-16">
-            <router-link to="#" class="origin_text">忘記帳號或密碼</router-link>
-          </div>
-          <div>
+          <v-alert
+              class="alert mt-2"
+              v-text="alert.text"
+              :type="alert.type"
+              :style="isAlertVisible? visible: invisible"
+              dense
+          ></v-alert>
+<!--          <div class="mt-4 mb-16">-->
+<!--            <router-link to="#" class="origin_text">忘記帳號或密碼</router-link>-->
+<!--          </div>-->
+          <div class="mt-16">
             <router-link to="/register" class="grey--text">註冊新帳號</router-link>
           </div>
         </v-col>
@@ -53,13 +60,21 @@ export default {
       if (this.input_rules.email(this.account_email) != true
           || this.input_rules.password_length(this.password) != true
       ){
-        // Show alert
+        this.showWrongFormatAlert()
       } else {
         console.log("Account:", this.account_email)
         console.log("Password:", this.password)
         let account_email = this.account_email
         let password = this.password
+        
         this.$store.dispatch('login', {account_email:account_email, password: password})
+          .then((success) => {
+            if (success) {
+              this.$router.push({ path: '/' })
+            } else {
+              this.showInvalidLoginAlert()
+            }
+          })
         this.clearPassword()
       }
     },

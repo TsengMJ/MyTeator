@@ -14,10 +14,13 @@ import TheFooter from "@/components/TheFooter";
 
 export default {
   name: "App",
-
   components: {
     TheHeader,
     TheFooter
+  },
+  data() {
+    // this.$store.dispatch("fetchAllProductsID")
+    return {}
   }
 
 }

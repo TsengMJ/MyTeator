@@ -10,7 +10,7 @@
     <div class="footer-text">
       <h3>FAQ</h3>
       <h3 class="ml-3 mr-3">聯絡我們</h3>
-      <h3>付費方案</h3>
+      <router-link to="/paid" class="white--text">付費方案</router-link>
     </div>
 
 

@@ -9,8 +9,7 @@ const userModule = {
   },
   mutations: {
     ASSIGN_USER ( state, user) {
-      console.log("in User Module")
-      console.log(user)
+      console.log("ASSIGN_USER: ", user)
 
       state.id = user.id;
       state.first_name = user.first_name;
@@ -19,34 +18,23 @@ const userModule = {
     }
   },
   actions: {
-    async login({ commit }, data) {
-      // call login api, check if avaliable
-      // let user = login(account, password)
-      // if (valid)
-      apiUserLogin(data)
-        .then((res) => {
+    async login({ commit } , account_data) {
+      let res = await apiUserLogin(account_data);
 
-        })
-
-      let user = {
-        id: 123,
-        first_name: 'MJ',
-        last_name: 'Tseng',
-        email: 'test@gmail.com',
-        status: '111',
+      console.log("Store, Login: ", res.data)
+      if(typeof(res.data) === "object" && res.data != null) {
+        commit('ASSIGN_USER', res.data)
+        return true;
+      } else {
+        return false;
       }
-
-      console.log("in User Module")
-      console.log(user)
-      commit('ASSIGN_USER', user)
     },
 
-    async register({ commit } , data) {
-      apiUserRegister(data)
-        .then((res) => {
-          if(res.data == "Success") { commit('ASSIGN_USER', data); return true;}
-          else { return false }
-        })
+    async register( _ , user) {
+      let res = await apiUserRegister(user);
+
+      if(res.data == "Success") { return true; }
+      else { return false; }
     },
 
   }

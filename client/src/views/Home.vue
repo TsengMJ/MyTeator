@@ -35,6 +35,9 @@ export default {
     HomePageProductPanel,
     HomePageJobPanel,
     HomePageBlogPanel
+  },
+  data() {
+    return{}
   }
 }
 </script>

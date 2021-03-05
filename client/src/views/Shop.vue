@@ -24,39 +24,16 @@
 
         <div class="shop_card-content">
           <div class="shop_card_left">
-            <div class="title font-b">商品分類</div>
-            <v-list>
-              <div v-for="(type, index) in types" :key="index">
-                <v-list-group>
-                  <template v-slot:activator>
-                    <v-list-item-title>{{ type.name }}</v-list-item-title>
-                  </template>
-
-                  <v-radio-group>
-                    <v-radio
-                        v-for="(subtype, i) in type.subtypes"
-                        :key="i"
-                        :label="subtype.name"
-                        :value="subtype.name"
-                        off-icon="mdi-radiobox-blank"
-                        on-icon="mdi-radiobox-marked"
-                    ></v-radio>
-                  </v-radio-group>
-
-                </v-list-group>
-              </div>
-
-            </v-list>
+            <ProductCategory />
           </div>
 
           <div class="shop_card_right">
             <div class="set-form">
-              <div class="commodity-img-box">
-
-                <div v-for="(product ,index) in products" :key="index">
-                  <div class="img-boz">
-                    <img :src="product.image">
-                  </div>
+              <div v-if="products" class="commodity-img-box">
+                <div v-for="(value, key) in products" :key="key">
+                  <router-link :to="productPageUrl(value[1]._id)" class="img-boz">
+                    <img :src="productImageUrl(value[1]._id)" >
+                  </router-link>
                 </div>
               </div>
 
@@ -71,100 +48,36 @@
 
 <script>
 import SearchBar from "@/components/SearchBar";
+import ProductCategory from "@/components/ProductCategory";
+import { mapState} from "vuex";
 
 export default {
   name: "Shop",
   components: {
-    SearchBar
+    SearchBar,
+    ProductCategory
   },
+  methods: {
+    addProducts() {
+      this.$store.dispatch('fetchAllProductsID')
+      console.log(this.products)
+    },
+    productPageUrl(id) {
+      return `/product/${id}`
+    },
+    productImageUrl(id) {
+      return `http://localhost:3000/api/product/image/${id}`
+    },
+  },
+  computed: mapState({
+    products: state => state.product.products,
+    products_id: state => state.product.products_id
+  }),
+
   data () {
     return {
-      types: [
-        {
-          name:'新商品',
-          subtypes: []
-        },
-        {
-          name:'價格',
-          subtypes: []
-        },
-        {
-          name:'年齡',
-          subtypes: [
-            {
-              name: '1-2',
-            },
-            {
-              name: '3-5',
-            },
-            {
-              name: '6-8',
-            },
-            {
-              name: '9-10',
-            },
-            {
-              name: '12+',
-            },
-          ]
-        },
-        {
-          name:'課程分類',
-          subtypes: []
-        },
-
-      ],
-      products: [
-        {
-          id: 'product_01',
-          name: 'product_01',
-          image: require('../assets/img/index/product-01.jpg'),
-          description: '小蜜蜂擴音器教師專用耳麥大功率腰掛講課教學用上課寶喇叭戶外叫賣便攜德勝揚聲器',
-          price: 1234,
-          discount: 0.5,
-        },
-        {
-          id: 'product_01',
-          name: 'product_01',
-          image: require('../assets/img/index/product-02.jpg'),
-          description: '小蜜蜂擴音器教師專用耳麥大功率腰掛講課教學用上課寶喇叭戶外叫賣便攜德勝揚聲器',
-          price: 1234,
-          discount: 0.5,
-        },
-        {
-          id: 'product_01',
-          name: 'product_01',
-          image: require('../assets/img/index/product-03.jpg'),
-          description: '小蜜蜂擴音器教師專用耳麥大功率腰掛講課教學用上課寶喇叭戶外叫賣便攜德勝揚聲器',
-          price: 1234,
-          discount: 0.5,
-        },
-        {
-          id: 'product_01',
-          name: 'product_01',
-          image: require('../assets/img/index/product-01.jpg'),
-          description: '小蜜蜂擴音器教師專用耳麥大功率腰掛講課教學用上課寶喇叭戶外叫賣便攜德勝揚聲器',
-          price: 1234,
-          discount: 0.5,
-        },
-        {
-          id: 'product_01',
-          name: 'product_01',
-          image: require('../assets/img/index/product-02.jpg'),
-          description: '小蜜蜂擴音器教師專用耳麥大功率腰掛講課教學用上課寶喇叭戶外叫賣便攜德勝揚聲器',
-          price: 1234,
-          discount: 0.5,
-        },
-        {
-          id: 'product_01',
-          name: 'product_01',
-          image: require('../assets/img/index/product-03.jpg'),
-          description: '小蜜蜂擴音器教師專用耳麥大功率腰掛講課教學用上課寶喇叭戶外叫賣便攜德勝揚聲器',
-          price: 1234,
-          discount: 0.5,
-        }
-      ]
-
+      numberOfProductsPerPage: 15,
+      currentPage: 1,
     }
   }
 }
@@ -213,3 +126,25 @@ export default {
 
 }
 </style>
+
+
+// computed: {
+//   ...mapState(["products", "products_id"]),
+//   displayNumber: () => {
+//     return (this.currentPage * 15 < this.products.size)
+//         ? this.currentPage * 15
+//         : this.products.size
+//   },
+//
+//   startProductIndex: () => this.currentPage * this.numberOfProductsPerPage,
+//   endProductIndex: () => {
+//     return (this.startProductIndex + this.numberOfProductsPerPage < this.products.size)
+//         ? this.startProductIndex + this.numberOfProductsPerPage - 1
+//         : this.products.size - 1
+//   },
+//   displayProductsID: () => {
+//     console.log(this.products_id.slice(this.startProductIndex, this.endProductIndex))
+//     return this.products_id.slice(this.startProductIndex, this.endProductIndex);
+//   }
+//
+// },

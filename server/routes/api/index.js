@@ -2,8 +2,10 @@ let express = require('express');
 let router = express.Router();
 
 let customerRouter = require('./customer')
-
 router.use('/customer', customerRouter)
+
+let productRouter = require('./product')
+router.use('/product', productRouter)
 
 // let licenseRouter = require('./license')
 // let languageRouter = require('./language')
@@ -13,7 +15,6 @@ router.use('/customer', customerRouter)
 // let article = require('./article')
 // let caseInfoRouter = require('./case_info')
 // let purchaseRecordRouter = require('./purchase_record')
-// let productRouter = require('./product')
 // let ecpayRouter = require('./ecpay')
 
 // router.use('/license', licenseRouter)
